@@ -1,7 +1,7 @@
-# hsuScript
-hsuScript is a small educational compiler written in C that demonstrates the complete pipeline from lexical analysis to runtime execution, aiming to provide an approachable example for developers interested in learning how compilers work and how languages are designed.
+# hsuScript — Educational Compiler Implementation
 
-## About hsuScript
+## Overview
+hsuScript is a small educational compiler written in C that demonstrates the complete pipeline from lexical analysis to runtime execution, aiming to provide an approachable example for developers interested in learning how compilers work and how languages are designed.
 
 hsuScript breaks source files into tokens, builds an abstract syntax tree, generates code, and executes the result through a minimal runtime.
 
@@ -14,15 +14,13 @@ flowchart LR
 ```
 
 ## Features
-
 - Written in portable C
 - Lexer and parser producing an AST
 - Simple code generation and runtime support
 - Scripts with variables, control flow, strings, and arithmetic
 - Comprehensive test suite
  
-## Language overview
-
+## Language Overview
 hsuScript uses a small C-like syntax. Programs start at `fn main()` and support:
 
 - Variables declared with `let`
@@ -56,7 +54,7 @@ Module guides:
 - [Code generation](docs/codegen.md)
 - [Runtime](docs/runtime.md)
 
-## Quick Start
+## Installation
 
 1. Build the compiler:
    ```bash
@@ -72,7 +70,7 @@ Module guides:
    ```
    The generated binary defaults to `a.out` if no name is given. Use `--emit-asm out.s` to also save the assembly.
 
-## Command-line options
+## Command-Line Options
 
 - `--ast-only`: parse and print the AST without generating code
 - `--emit-asm [path]`: write assembly to `path` (defaults to `build/out.s`)
